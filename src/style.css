@@ -1,0 +1,29 @@
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-open:checked + .carousel-item {
+    opacity: 1;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .carousel {
+    position: relative;
+  }
+  
+  .control-1,
+  .control-2,
+  .control-3,
+  .control-4,
+  .control-5 {
+    display: none;
+  }
+  

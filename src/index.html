@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../OwlCarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4 mb-24">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="#" class="text-white text-xl font-semibold">My Website</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white">Home</a>
+          <a href="#" class="text-gray-300 hover:text-white">About</a>
+          <a href="#" class="text-gray-300 hover:text-white">Services</a>
+          <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+        </div>
+        <button id="toggleMenu" class="md:hidden text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden bg-gray-700 py-2">
+        <a href="#" class="block text-white px-4 py-2">Home</a>
+        <a href="#" class="block text-white px-4 py-2">About</a>
+        <a href="#" class="block text-white px-4 py-2">Services</a>
+        <a href="#" class="block text-white px-4 py-2">Contact</a>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div id="sliderr" class="border-8 border-sky-500">
+      <h1 class="text-center font-bold text-2xl pb-5">Slider</h1>
+      <!-- Set up your HTML -->
+      <div class="owl-carousel">
+        <div>
+          <section
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+          >
+            <div
+              class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
+            ></div>
+            <div
+              class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            ></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+              <img
+                class="mx-auto h-12"
+                src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
+                alt=""
+              />
+              <figure class="mt-10">
+                <blockquote
+                  class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+                >
+                  <p>
+                    “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo expedita voluptas culpa sapiente alias molestiae.
+                    Numquam corrupti in laborum sed rerum et corporis.”
+                  </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                  <img
+                    class="mx-auto w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-3 text-base"
+                  >
+                    <div class="font-semibold text-gray-900">Judith Black</div>
+                    <svg
+                      viewBox="0 0 2 2"
+                      width="3"
+                      height="3"
+                      aria-hidden="true"
+                      class="fill-gray-900"
+                    >
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div class="text-gray-600">CEO of Workcation</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+          >
+            <div
+              class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
+            ></div>
+            <div
+              class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            ></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+              <img
+                class="mx-auto h-12"
+                src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
+                alt=""
+              />
+              <figure class="mt-10">
+                <blockquote
+                  class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+                >
+                  <p>
+                    “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo expedita voluptas culpa sapiente alias molestiae.
+                    Numquam corrupti in laborum sed rerum et corporis.”
+                  </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                  <img
+                    class="mx-auto w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-3 text-base"
+                  >
+                    <div class="font-semibold text-gray-900">Judith Black</div>
+                    <svg
+                      viewBox="0 0 2 2"
+                      width="3"
+                      height="3"
+                      aria-hidden="true"
+                      class="fill-gray-900"
+                    >
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div class="text-gray-600">CEO of Workcation</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+          >
+            <div
+              class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
+            ></div>
+            <div
+              class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            ></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+              <img
+                class="mx-auto h-12"
+                src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
+                alt=""
+              />
+              <figure class="mt-10">
+                <blockquote
+                  class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+                >
+                  <p>
+                    “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo expedita voluptas culpa sapiente alias molestiae.
+                    Numquam corrupti in laborum sed rerum et corporis.”
+                  </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                  <img
+                    class="mx-auto w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-3 text-base"
+                  >
+                    <div class="font-semibold text-gray-900">Judith Black</div>
+                    <svg
+                      viewBox="0 0 2 2"
+                      width="3"
+                      height="3"
+                      aria-hidden="true"
+                      class="fill-gray-900"
+                    >
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div class="text-gray-600">CEO of Workcation</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+          >
+            <div
+              class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
+            ></div>
+            <div
+              class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            ></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+              <img
+                class="mx-auto h-12"
+                src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
+                alt=""
+              />
+              <figure class="mt-10">
+                <blockquote
+                  class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+                >
+                  <p>
+                    “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo expedita voluptas culpa sapiente alias molestiae.
+                    Numquam corrupti in laborum sed rerum et corporis.”
+                  </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                  <img
+                    class="mx-auto w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-3 text-base"
+                  >
+                    <div class="font-semibold text-gray-900">Judith Black</div>
+                    <svg
+                      viewBox="0 0 2 2"
+                      width="3"
+                      height="3"
+                      aria-hidden="true"
+                      class="fill-gray-900"
+                    >
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div class="text-gray-600">CEO of Workcation</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div>
+          <section
+            class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+          >
+            <div
+              class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"
+            ></div>
+            <div
+              class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+            ></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+              <img
+                class="mx-auto h-12"
+                src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
+                alt=""
+              />
+              <figure class="mt-10">
+                <blockquote
+                  class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9"
+                >
+                  <p>
+                    “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo expedita voluptas culpa sapiente alias molestiae.
+                    Numquam corrupti in laborum sed rerum et corporis.”
+                  </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                  <img
+                    class="mx-auto w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                  <div
+                    class="mt-4 flex items-center justify-center space-x-3 text-base"
+                  >
+                    <div class="font-semibold text-gray-900">Judith Black</div>
+                    <svg
+                      viewBox="0 0 2 2"
+                      width="3"
+                      height="3"
+                      aria-hidden="true"
+                      class="fill-gray-900"
+                    >
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div class="text-gray-600">CEO of Workcation</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div class="owl-nav flex justify-center">
+          <button type="button" role="presentation" class="owl-prev">
+            <span aria-label="Previous">‹</span></button
+          ><button type="button" role="presentation" class="owl-next">
+            <span aria-label="Next">›</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="flex">
+      <main class="w-8/12 bg-slate-500 pb-9 inline-block">
+        <div class="bg-white py-24 sm:py-32">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+              <h2
+                class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                From the blog
+              </h2>
+              <p class="mt-2 text-lg leading-8 text-gray-600">
+                Learn how to grow your business with our expert advice.
+              </p>
+            </div>
+            <div
+              class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+            >
+              <article
+                class="flex max-w-xl flex-col items-start justify-between"
+              >
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2020-03-16" class="text-gray-500"
+                    >Mar 16, 2020</time
+                  >
+                  <a
+                    href="#"
+                    class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                    >Marketing</a
+                  >
+                </div>
+                <div class="group relative">
+                  <h3
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600"
+                  >
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Boost your conversion rate
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    Illo sint voluptas. Error voluptates culpa eligendi. Hic vel
+                    totam vitae illo. Non aliquid explicabo necessitatibus unde.
+                    Sed exercitationem placeat consectetur nulla deserunt vel.
+                    Iusto corrupti dicta.
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                    class="h-10 w-10 rounded-full bg-gray-50"
+                  />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Michael Foster
+                      </a>
+                    </p>
+                    <p class="text-gray-600">Co-Founder / CTO</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="w-4/12 bg-orange-400 pb-9 inline-block">
+        <h1 class="font-xxl font-bold text-center pb-4">SideBar</h1>
+        <div class="flex flex-col h-full">
+            <!-- Sidebar header -->
+            <div class="flex items-center justify-center h-20 border-b border-gray-700">
+                <h1 class="text-white text-2xl font-semibold">Sidebar</h1>
+            </div>
+            <!-- Sidebar links -->
+            <nav class="flex-1 overflow-y-auto">
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">Home</a>
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">About</a>
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">Services</a>
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-700">Contact</a>
+            </nav>
+       
+        </div>
+      </aside>
+    </section>
+    <footer>
+        <div class="flex items-center justify-center h-10 border-t border-gray-700">
+            <p class="text-black">© 2024 Developed by Nabil</p>
+        </div>
+    </footer>
+
+    <script src="../OwlCarousel/jquery.min.js"></script>
+
+    <script src="../owlcarousel/owl.carousel.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
